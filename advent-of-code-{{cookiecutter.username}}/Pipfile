@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+black = "*"
+
+[packages]
+advent-of-code-data = "*"
+aoc-utils = {git = "https://github.com/ifosch/aoc-utils.git", editable = true, ref = "master"}
+
+[requires]
+python_version = "{{cookiecutter.python_version}}"
